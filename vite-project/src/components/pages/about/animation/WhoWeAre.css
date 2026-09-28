@@ -1,0 +1,139 @@
+.WhoWeAreContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #F5F5F5;
+    margin-top: -22px;
+}
+
+.whoWeAreH1{
+         width: 75%;
+    height: 100px;
+    /* background: skyblue; */
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    align-items: center;
+}
+
+.imgSlider{
+    width:95%;
+    height:575px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.sliderBox{
+    width:745px;
+    height:350px;
+    overflow:hidden;
+    border-radius:15px;
+}
+
+.slideTrack{
+    display:flex;
+    width:max-content;
+    animation:slide 24s linear infinite;
+}
+
+.slideTrack img{
+    width:745px;
+    height:350px;
+    object-fit:cover;
+    flex-shrink:0;
+}
+
+
+.content{
+    width: 60%;
+    height: 112px;
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    color: #4F5664;
+    text-align: center;
+}
+
+.brand{
+    color: #04796B !important;
+}
+
+@keyframes slide{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-4470px); /* 745 × 6 */
+    }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+    .sliderBox {
+    width: 660px;
+    height: 340px;}
+    .content {
+    width: 80%;
+    font-size: 18px;
+}
+.imgSlider {
+    justify-content: space-evenly;
+}
+.whoWeAreH1 {
+    margin-top: -180px;
+}
+.cardBox {
+    height: 855px;
+}
+}
+
+@media (max-width: 768px) {
+    .cardBox {
+        height: 710px;
+}
+    .whoWeAreH1 {
+        margin-top: -95px;
+    }
+        .sliderBox {
+        width: 500px;
+        height: 240px;
+    }
+    .content {
+        width: 85%;
+        font-size: 14px;
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cardBox {
+    height: 700px !important;
+}
+    .sliderBox {
+        width: 340px;
+        height: 175px;
+    }
+        .whoWeAreH1 {
+        margin-top: 0px;
+    }
+}
+@media (max-width: 400px) {
+    .sliderBox {
+        width: 260px;
+        height: 140px;
+    }
+        .content {
+        width: 90%;
+        font-size: 12px;
+        margin-bottom: 245px;
+    }
+    .whoWeAreH1 {
+    font-size: 32px;
+}
+}

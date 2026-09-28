@@ -1,0 +1,238 @@
+.Footer-Section {
+    width: 100%;
+    height: 416px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #2C3E50;
+}
+
+.footerInfo {
+    width: 1488px;
+    height: 164px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paymentSec {
+    width: 1488px;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #F5F5F5;
+    font-weight: 600;
+}
+
+.footerLogo {
+    width: 210px;
+}
+
+.footerContent {
+    width: 550.15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.forSame {
+    width: 184px;
+    height: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.footerLogoImg {
+    width: 160px;
+    height: 51.8;
+}
+
+.footerLogo p {
+    color: #E65100;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.forSame ul li {
+    color: white;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 12px;
+}
+
+.forSame ul li a {
+    text-decoration: none;
+    color: #F5F5F5;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.forSame h3 {
+    color: #F5F5F5;
+    font-weight: 600;
+}
+
+.forSame ul li a:hover {
+    color: #2DD4BE;
+    transition: all 0.4s ease;
+}
+
+.forSame ul {
+    margin-top: 0px;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.socialIcons svg {
+    color: white;
+}
+
+.socialLogos {
+    width: 159px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.socialLogos svg {
+    color: white;
+    background: transparent;
+}
+
+.socialLogos svg:hover {
+    color: #2DD4BE;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.payMethodLogo svg {
+    color: grey;
+
+}
+
+.payMethodLogo {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.payMethodLogo svg:hover {
+    transition: all 1s ease;
+    color: #F5F5F5;
+    cursor: pointer;
+}
+
+
+/* RESPINSIVE-CSS */
+
+@media (max-width: 1400px) {
+    .footerInfo {
+        width: 1024px;
+        margin-bottom: 40px;
+    }
+
+    .paymentSec {
+        width: 1024px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .footerInfo {
+        width: 955px;
+    }
+
+    .paymentSec {
+        width: 955px;
+    }
+}
+
+@media (max-width: 992px) {
+    .footerInfo {
+        width: 752px;
+    }
+
+    .Footer-Section {
+        height: 550px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footerInfo {
+        width: 570px;
+    }
+
+    .paymentSec {
+        width: 570px;
+        margin-bottom: -350px;
+    }
+
+    .footerInfo {
+        flex-direction: column;
+        margin-top: -370px;
+    }
+
+    .footerContent {
+        flex-direction: column;
+    }
+
+    .Footer-Section {
+        height: 757px;
+    }
+
+    .forSame ul {
+        padding: 0px;
+    }
+
+    .forSame {
+        align-items: flex-start;
+    }
+
+    .links {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footerInfo {
+        width: 390px;
+    }
+
+    .footerContent {
+        width: 392.15px;
+    }
+
+    .paymentSec {
+        width: 390px;
+    }
+}
+
+@media (max-width: 400px) {
+    .footerInfo {
+        width: 300px;
+    }
+
+    .footerContent {
+        width: 300.15px;
+    }
+
+    .paymentSec {
+        width: 300px;
+    }
+
+    .footerLogo p {
+    font-size: 14px;}
+}

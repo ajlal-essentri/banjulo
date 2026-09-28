@@ -1,0 +1,302 @@
+.Product-Section {
+    width: 100%;
+    background: #F5F5F5;
+    transform: translateY(-185px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.productSecH1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2C3E50;
+}
+
+.Products-Section {
+    width: 1280px;
+    height: 504px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.products {
+    width: 302px;
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.products img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .3s ease;
+    border-radius: 12px;
+}
+
+.products:hover .overlay {
+    opacity: 1;
+}
+
+.overlay button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 50px;
+    background: white;
+    cursor: pointer;
+    color: #2C3E50;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.overlay button:hover {
+
+    background: #0D9488;
+    transition: all 0.4s ease;
+    color: white;
+}
+
+/* Product-Img-Modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-Box {
+    width: 440px;
+    height: 350px;
+    background: #F5F5F5;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-Box img {
+    width: 380px;
+    height: 192px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    background: #eee;
+}
+
+.modal-details {
+    width: 85%;
+}
+
+/* Responsive Css */
+
+@media (max-width: 1400px) {
+    .Products-Section {
+        width: 1142px;
+    }
+
+    .products {
+        width: 267px;
+    }
+
+    .modal {
+        position: fixed;
+        top: 47px;
+        left: 35px;
+        width: 82%;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .Products-Section {
+        width: 947px;
+    }
+
+    .products {
+        width: 218px;
+    }
+
+    .modal {
+        top: 100px;
+        left: 35px;
+        width: 67%;
+    }
+}
+
+@media (max-width: 992px) {
+    .Products-Section {
+        width: 723px;
+    }
+
+    .products {
+        width: 162px;
+    }
+
+    .modal {
+        top: 190px;
+        left: 25px;
+        width: 52%;
+    }
+
+    .modal-Box {
+        width: 380px;
+        height: 320px;
+    }
+
+    .modal-Box img {
+        width: 320px;
+        height: 165px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .Products-Section {
+        width: 550px;
+        height: 1032px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .products {
+        width: 263px;
+    }
+
+    .productSecH1 {
+        font-size: 28px;
+    }
+
+    .modal {
+        left: 15px;
+        width: 39.3%;
+        height: 100vh;
+        top: 135px;
+    }
+
+    .modal-Box {
+        width: 460px;
+        height: 315px;
+    }
+
+    .modal-Box img {
+        width: 380px;
+        height: 200px;
+    }
+
+    .close-btn {
+        top: 0px;
+        right: 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    .Products-Section {
+        width: 371px;
+    }
+
+    .products {
+        width: 172px;
+    }
+
+    .productSecH1 {
+        font-size: 20px;
+    }
+
+    .modal {
+        left: 15px;
+        width: 26.5%;
+        height: 50vh;
+        top: 135px;
+    }
+
+    .modal-Box {
+        width: 340px;
+        height: 275px;
+    }
+
+    .modal-Box img {
+        width: 300px;
+        height: 190px;
+    }
+
+    .close-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .modal-details {
+        height: 70px;
+    }
+
+    .modal-details h2 {
+        font-size: 18px;
+    }
+
+    .modal-details p {
+        margin-top: -14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .Products-Section {
+        width: 300px;
+    }
+
+    .products {
+        width: 144px;
+    }
+
+    .productSecH1 {
+        font-size: 16px;
+    }
+
+    .modal {
+        width: 93.9%;
+    }
+
+    .modal-Box {
+        width: 270px;
+        height: 255px;
+    }
+
+    .modal-Box img {
+        width: 230px;
+        height: 150px;
+    }
+}

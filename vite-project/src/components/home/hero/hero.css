@@ -1,0 +1,200 @@
+.heroSection {
+    position: relative;
+}
+
+.heroSectionImg {
+    width: 100%;
+    display: block;
+    filter: brightness(47%);
+}
+
+.heroContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 60%;
+}
+
+.heroContent h1 {
+    font-size: 72px;
+    margin: 0;
+}
+
+.heroText {
+    color: #F5F5F5;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.brand {
+    color: #2DD4BF;
+}
+
+.heroContent form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+
+
+}
+
+.heroContent form input {
+    width: 256px;
+    display: flex;
+    padding-left: 10px;
+
+}
+
+.heroContent form button {
+    width: 146.5px;
+    text-align: center;
+    background: #E65100;
+    font-size: 14px;
+    color: rgb(245 245 245 / var(--tw-text-opacity));
+}
+
+.forSameCss {
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.heroContent form button:hover {
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+/* Hero-Section-Responsive */
+
+@media (max-width: 1400px) {
+    .heroContent {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .heroContent h1 {
+        font-size: 60px;
+    }
+
+    .heroContent {
+        width: 78%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .heroSection {
+        height: 676px;
+    }
+
+    .heroSectionImg {
+        margin-top: 85px;
+        height: 552px;
+    }
+
+    .heroContent {
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroContent {
+        width: 100%;
+    }
+
+    .heroContent h1 {
+        font-size: 52px;
+    }
+
+    .heroText {
+        font-size: 28px;
+    }
+
+    .heroContent form input {
+        width: 215px;
+    }
+
+    .heroSectionImg {
+        height: 500px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .heroSection {
+        height: 560px;
+    }
+
+    .heroSectionImg {
+        height: 410px;
+    }
+
+    .heroContent h1 {
+        font-size: 34px;
+    }
+
+    .heroText {
+        font-size: 20px;
+    }
+
+    .heroContent form {
+        flex-direction: column;
+    }
+
+    .heroContent form button {
+        width: 371px;
+    }
+
+    .heroContent form input {
+        width: 371px;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+    .heroSection {
+        height: 460px;
+    }
+
+    .heroSectionImg {
+        margin-top: 61px;
+        height: 290px;
+    }
+
+    .heroContent h1 {
+        font-size: 26px;
+    }
+
+    .heroText {
+        font-size: 16px;
+    }
+
+    .heroContent form button {
+        width: 300px;
+    }
+
+    .heroContent form input {
+        width: 300px;
+    }
+
+    .heroContent {
+        top: 39%;
+    }
+}

@@ -1,0 +1,82 @@
+.joinBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #F5F5F5;
+    height: 323px;
+}
+
+.joinBox h2{
+    font-size: 36px;
+    color: #2C3E50;
+}
+
+.joinContent{
+    width: 768px;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.joinBox p{
+    font-size: 20px;
+    color: #64565A;
+    font-weight: 600;
+}
+
+.joinBox button{
+    width: 201px;
+   height:  52px;
+   background: #E65100;
+   font-size: 18px;
+   color: #F5F5F5;
+   font-weight: 400;
+   border-radius: 30px;
+   border: none;
+}
+
+.joinBox button:hover{
+    background: #b13e00;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .joinContent {
+    width: 555px;}
+}
+
+@media (max-width: 576px) {
+    .joinBox p {
+    font-size: 16px;
+}
+
+.joinBox button {
+    width: 170px;
+    height: 48px;
+    font-size: 16px;
+}
+.joinBox h2 {
+    font-size: 30px;
+}
+.joinContent {
+        width: 380px;
+    }
+}
+
+@media (max-width: 400px) {
+
+        .joinBox button {
+        width: 130px;
+        height: 40px;
+        font-size: 13px;
+    }    .joinBox h2 {
+        font-size: 24px;
+    }    .joinBox p {
+        font-size: 14px;
+    }    .joinContent {
+        width: 290px;
+    }
+}

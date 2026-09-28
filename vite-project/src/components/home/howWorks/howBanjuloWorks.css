@@ -1,0 +1,129 @@
+.How-Banjulo-Works-Section {
+    width: 100%;
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        transform: translateY(-230px);
+}
+
+.HowBanjuloWorksH1 {
+    width: 100%;
+    color: #2C3E50;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.instructions-Section {
+    color: #2C3E50;
+    width: 100%;
+    height: 180px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.instructions {
+    width: 348px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+}
+
+.forCircle {
+    width: 80px;
+    height: 80px;
+    background: #CCFBF1;
+    color: #0D948D;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.instructions p {
+    margin-top: -5px;
+}
+
+.accessBtnDiv {
+    height: 116px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.accessButton {
+    width: 201px;
+    height: 52px;
+    border-radius: 24px;
+    background: #E65100;
+    color: #F5F5F5;
+    cursor: pointer;
+    border: transparent;
+    font-size: 16px;
+}
+
+.accessButton:hover{
+    background: #C84300;
+transition: all 0.4s ease;
+}
+
+/* Responsive CSS */
+
+@media (max-width: 1400px) {
+
+    .instructions {
+        width: 224px;}
+}
+
+@media (max-width: 1200px) {
+.instructions-Section {
+    width: 95%;
+}
+}
+
+@media (max-width: 992px) {
+    .instructions-Section {
+     height: 300px;
+        width: 90%;
+    }    .instructions {
+        width: 160px;
+        height: 256px;
+    }
+}
+
+@media (max-width: 768px) {
+.instructions-Section {
+     grid-template-columns: 1fr;
+     height: 900px;
+     
+     
+width: 65%;
+}    .instructions {
+        width: 520px;
+        height: 156px;
+    }
+}
+@media (max-width: 576px) {
+    .instructions {
+        width: 360px;
+        height: 180px;
+    }.HowBanjuloWorksH1 {
+    font-size: 24px;}
+}
+
+@media (max-width: 400px) {
+    .instructions {
+        width: 281px;}
+            .HowBanjuloWorksH1 {
+        font-size: 18px;
+    }.instructions p {
+    font-size: 15px;}
+        .instructions-Section {
+        width: 75%;
+    }
+}
